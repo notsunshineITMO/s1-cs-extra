@@ -31,4 +31,4 @@ async def start_handler(message: types.Message):
         time.sleep(60 * 60 * 24)
 
 if __name__ == '__main__':
-    executor.start_polling(dp)
+    executor.start_polling(dp, skip_updates=True)
