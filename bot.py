@@ -3,7 +3,8 @@ import logging
 
 from aiogram import Bot, Dispatcher, executor, types
 
-BOT_TOKEN = "5960674208:AAGcW9pro3e1yDVloV--BiMcSCkj-OalVLQ"
+
+BOT_TOKEN = open("TOKEN.txt","rt").readline()
 REMINDER = "{}, вы выставили баллы в таблицу БАРС?"
 
 bot = Bot(token=BOT_TOKEN)
